@@ -1,0 +1,104 @@
+/* Body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header styling */
+header {
+  background-color: #333;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Heading styling */
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #f0f0f0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Main content container */
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 1;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Game card styling */
+.game-card {
+  background-color: #444;
+  padding: 25px;
+  border-radius: 15px;
+  width: 28%;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+  background-color: #555;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer text styling */
+footer p {
+  color: #f0f0f0;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Game card title and description */
+.game-card h2 {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.game-card p {
+  font-size: 1rem;
+  color: #ccc;
+  margin: 0;
+}
+
+/* Small screen adjustments */
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .game-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    padding: 10px;
+  }
+}
